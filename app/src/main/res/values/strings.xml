@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Футбольное табло</string>
+    <string name="second_dot">:</string>
+    <string name="Jungkook">Чонгук</string>
+    <string name="Jimin">Чимин</string>
+    <string name="score_of_match">Счет матча</string>
+    <string name="reset_score">Обнулить счёт</string>
+    <string name="image_of_Jungkook">Изображение Чонгука</string>
+    <string name="image_of_Jimin">Изображение Чимина</string>
+</resources>

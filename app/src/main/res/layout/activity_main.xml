@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication345.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/Jungkook_logotype2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/image_of_Jungkook"
+            app:srcCompat="@drawable/d6aef65fb92d449bbcda129459ed7a33"
+            tools:ignore="NestedWeights" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:id="@+id/Jimin_logotype2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/image_of_Jimin"
+            app:srcCompat="@drawable/_576463942501_50bf5d67_4dad_4395_a33c_87630e81df82" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="@string/score_of_match"
+        android:textSize="@dimen/ts_20" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Jungkook_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/second_dot"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size" />
+
+        <TextView
+            android:id="@+id/Jimin_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Jungkook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickAddJungkook"
+            android:text="@string/Jungkook"
+            android:textSize="@dimen/ts_20"
+            tools:ignore="ButtonStyle,NestedWeights" />
+        <Button
+            android:id="@+id/Jimin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickAddJimin"
+            android:text="@string/Jimin"
+            android:textSize="@dimen/ts_20"
+            tools:ignore="ButtonStyle,UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="onClickButtonClear"
+        android:text="@string/reset_score" />
+</LinearLayout>
